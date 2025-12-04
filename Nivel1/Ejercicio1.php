@@ -30,7 +30,6 @@ class Employee {
         $this->salary = $salary;
     }
 
-
     public function checkTaxes(){
         $message = $this->name . "<br>";
         
