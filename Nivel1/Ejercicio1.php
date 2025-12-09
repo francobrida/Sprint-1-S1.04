@@ -2,10 +2,10 @@
 
 class Employee {
 
-    private String $name;
+    private string $name;
     private int $salary;
 
-    public function __construct ($name, $salary){
+    public function __construct (string $name,int $salary){
         $this->name = $name;
         $this->salary = $salary;
     }
