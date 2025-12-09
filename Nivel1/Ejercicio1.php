@@ -10,26 +10,6 @@ class Employee {
         $this->salary = $salary;
     }
 
-    // Getters 
-
-    public function getName() {
-        return $this->name;
-    }
-
-    public function getSalary() {
-        return $this->salary;
-    }
-
-    // Setters
-
-    public function setName($name) {
-        $this->name = $name;
-    }
-
-    public function setSalary($salary) {
-        $this->salary = $salary;
-    }
-
     public function checkTaxes(){
         $message = $this->name . "<br>";
         
