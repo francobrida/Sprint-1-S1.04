@@ -2,28 +2,20 @@
 
 class Shape {
 
-    private $width;
-    private $height;
+    private float $width;
+    private float $height;
 
-    public function __construct($width, $height){
+    public function __construct(float $width,float $height){
         $this->width = $width;
         $this->height = $height;
     }
 
-    public function getWidth(){
+    public function getWidth() : float{
         return $this->width;
     }
 
-    public function getHeight(){
+    public function getHeight() : float{
         return $this->height;
-    }
-
-    public function setWidth($width){
-        $this->width = $width;
-    }
-
-    public function setHeight($height){
-        $this->height = $height;
     }
 
 }
