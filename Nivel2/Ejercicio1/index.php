@@ -1,13 +1,13 @@
 <?php
+require_once "PokerDice.php";
+require_once "PokerDicesGroup.php";
 
-$dices = [];
+$pokerHand = new PokerDicesGroup(); 
+$figures = $pokerHand->throw5Dices();
 
-for ($i = 0; $i < 5; $i++) {
-    $dices[] = new PokerDice();
-} // Creates the dices and storage them in an array
+foreach ($figures as $figure) {
+    echo $figure . "\n";
+}
 
-foreach ($dices as $dice) {
-    $dice->rollTheDice();
-} // Uses the methods for each of the five dices.
 
 ?>

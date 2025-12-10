@@ -4,14 +4,14 @@ class PokerDice {
 
    private array $figures;
    private int $lastRoll;
-   public static int $totalRollCounter = 0;
+   public static int $totalRollCounter = 0; // Static counter for total rolls of every dice.
 
    public function __construct() {
     $this->figures = ["Ace", "K", "Q", "J", "7", "8"];
     $this->lastRoll = -1;
     }
 
-   public function rollTheDice() {
+   public function rollTheDice() : void {
         $this->lastRoll = rand(0, 5);
         self::$totalRollCounter++; 
     }
