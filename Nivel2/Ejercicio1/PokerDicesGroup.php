@@ -20,5 +20,9 @@ class PokerDicesGroup {
         return $figures;
     }
 
+    public function getDices() : array {
+        return $this->dices;
+    }
+
 }
 ?>

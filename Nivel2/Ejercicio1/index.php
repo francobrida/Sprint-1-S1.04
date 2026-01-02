@@ -6,8 +6,10 @@ $pokerHand = new PokerDicesGroup();
 $figures = $pokerHand->throw5Dices();
 
 foreach ($figures as $figure) {
-    echo $figure . "\n";
+    echo $figure;
 }
+echo "\n";
+echo PokerDice::tellTotalRolls();
 
 
 ?>

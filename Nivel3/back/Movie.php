@@ -25,9 +25,9 @@ class Movie {
 
     public function __toString()
     {
-        return "Movie: " . $this->name . "<br>"
-        . ", Duration: " . $this->duration . "<br>"
-        . " mins, Director: " . $this->director;
+        return "<b>" .$this->name . "</b><br>"
+        . "Duration: " . $this->duration . "mins.<br>"
+        . "Director: " . $this->director . "<br>";
     }
 }
 

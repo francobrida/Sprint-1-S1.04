@@ -29,7 +29,7 @@ class Cinema {
             }
         }
 
-        return "Movie: {$this->movies[$longestMovieIndex]->getName()}, Duration: {$this->movies[$longestMovieIndex]->getDuration()}";
+        return "Longest Movie: {$this->movies[$longestMovieIndex]->getName()}, Duration: {$this->movies[$longestMovieIndex]->getDuration()}";
     }
 
     public function __toString()
@@ -39,9 +39,9 @@ class Cinema {
             $moviesList .= $movie . "<br>";
         }
 
-        return "Cinema: " . $this->name . "<br>"
-        . "Town: " . $this->town . "<br>"
-        . "Movies:<br>" . $moviesList;
+        return "<div class='cinema'><b>Cinema: " . $this->name . "</b><br>"
+        . "<b>Town: " . $this->town . "</b><br>"
+        . "<b>Movies at display:</b><br><br>" . $moviesList . "<br>";
     }
 
 }
